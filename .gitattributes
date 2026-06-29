@@ -1,0 +1,5 @@
+# Normalize line endings: store LF in the repository
+* text=auto
+
+# Shell scripts must stay LF so the hooks run on macOS/Linux
+*.sh text eol=lf
