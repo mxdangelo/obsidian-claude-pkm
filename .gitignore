@@ -1,0 +1,25 @@
+# Private overrides
+CLAUDE.local.md
+
+# Obsidian workspace state
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/.trash/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Trash
+.trash/
+
+# Sync (e.g. Syncthing for Inbox phone↔PC)
+.stfolder
+.stversions/
+*.sync-conflict-*
+
+# Machine-local clipboard-capture helpers (see Inbox section in CLAUDE.md)
+capture-clip.ps1
+capture-clip.cmd
