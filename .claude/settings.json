@@ -1,0 +1,72 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(date:*)",
+      "Bash(wc:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Read(*)",
+      "Write(Daily Notes/**)",
+      "Write(Senso/**)",
+      "Write(Projects/**)",
+      "Write(Archives/**)",
+      "Write(Templates/**)",
+      "Write(Themes/**)",
+      "Write(People/**)",
+      "Edit(Daily Notes/**)",
+      "Edit(Senso/**)",
+      "Edit(Projects/**)",
+      "Edit(Templates/**)",
+      "Edit(Themes/**)",
+      "Edit(People/**)",
+      "Write(Inbox/**)",
+      "Write(Sources/**)",
+      "Edit(Inbox/**)",
+      "Edit(Sources/**)",
+      "Write(Agenda.md)",
+      "Edit(Agenda.md)"
+    ],
+    "deny": [
+      "Edit(.claude/settings.json)",
+      "Edit(.claude/settings.local.json)",
+      "Edit(.claude/hooks/**)",
+      "Write(.git/**)",
+      "Bash(rm -rf:*)"
+    ]
+  },
+  "env": {
+    "VAULT_PATH": "${cwd}",
+    "DAILY_NOTES_DIR": "Daily Notes",
+    "SENSO_DIR": "Senso",
+    "PROJECTS_DIR": "Projects",
+    "TEMPLATES_DIR": "Templates",
+    "ARCHIVES_DIR": "Archives"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/session-init.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/skill-discovery.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
