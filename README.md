@@ -27,17 +27,22 @@ You can use the vault without the plugins, but you lose the live views and auto-
 Two mirrored cycles:
 
 ```
-Life side:       Daily Notes  →  /weave   →  Themes/ + People/
+Life side:       Daily Notes  →  /weekly  →  /weave   →  Themes/ + People/
 Knowledge side:  Inbox        →  /capture →  Sources/ → Ideas / Themes
 ```
 
 - **Senso** is the compass: `Direzione` (who you want to be), `Pratiche` (what you cultivate),
   `Mese` (the month's intention), and the **Weekly Review** (the operational plan).
-- **The daily note** is where life happens. Write it freely; Claude enriches it and closes it.
+- **The daily note** is where life happens. You write it **by hand** — Obsidian creates it,
+  Claude isn't needed day to day. Distillation is periodic, not daily.
+- **`/weekly`** (Sunday) is chronicle + planning: it reads the 7 dailies, appends dated traces to
+  `People/`, reviews the project checkboxes, fills the closing sections, then plans the week ahead.
+  It records the observable — what you did, who you saw.
 - **Tasks have one source: the project file.** The daily and the weekly plan are Dataview *views*
   over the `[plan::]` / `[est::]` fields on project tasks — the checkbox lives only in the project.
-- **`/weave`** reads across the dailies and braids recurring patterns into `Themes/` and `People/`.
-  Reflection lives there, not in the planning review.
+- **`/weave`** (every ~2 weeks) reads across the dailies and braids recurring patterns into
+  `Themes/` and `People/`. It reads the layer underneath — what you feel, what you don't say —
+  and reflection lives there, not in the weekly.
 
 ## Directory structure
 
@@ -62,9 +67,9 @@ Invoke with `/name` in Claude Code:
 
 | Skill | What it does |
 |-------|--------------|
-| `/daily` | Open/enrich today's note; close the day (fill sections, append traces and logs) |
-| `/weekly` | Run the weekly review — planning only, no reflection |
-| `/weave` | Longitudinal pattern analysis across the dailies |
+| `/daily` | Fallback only — create today's note without Obsidian; normally you write the daily by hand |
+| `/weekly` | Sunday review — chronicle (reads the 7 dailies: traces, checkboxes, closing sections) + planning |
+| `/weave` | Longitudinal pattern analysis across the dailies (every ~2 weeks) |
 | `/project` | Create, status-check, or archive projects |
 | `/capture` | Process the Inbox — URLs become `Sources/` notes |
 | `/agenda` | Manage `Agenda.md` (appointments, deadlines) |

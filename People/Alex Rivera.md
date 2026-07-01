@@ -21,6 +21,6 @@ easy task and says so without making it a verdict.
 
 ## Traces
 
-*Dated lines, appended by `/daily` at the evening close. Second person.*
+*Dated lines, appended by `/weekly` on Sunday from the week's dailies. Second person.*
 
 **2026-06-22** — You mentioned the focus block dissolving into a call, and how relieved you were. Alex just said "that's the tell, isn't it" — and it stuck with you. [[Daily Notes/2026-06-22]]

@@ -9,19 +9,6 @@ tags: [daily-note]
 
 ## 📝 Notes of the day
 
-### Morning
-
-### Afternoon
-
-### Evening
-
----
-
-## ❓ Open questions
-
-*Things that didn't resolve today — to pick up again or let ripen.*
-
-- 
 
 ---
 
@@ -67,35 +54,6 @@ TASK FROM "Projects"
 WHERE plan = this.file.day
 SORT est DESC
 ```
-
----
-
-## ⬆️⬇️ High and low
-
-**High:** 
-
-**Low:** 
-
----
-
-## 🔍 End of day
-
-### What went well?
-- 
-
-### What would I improve?
-- 
-
-### What did I learn?
-- 
-
-### Tomorrow's priorities
-- 
-
----
-
-## Themes
-
 
 ---
 

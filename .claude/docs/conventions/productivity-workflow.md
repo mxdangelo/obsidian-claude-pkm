@@ -24,24 +24,25 @@ Weekly Review        — the operational plan for the week
 The practices are the foundation; the month, the week, and the day are where life happens.
 The threads between days are woven by `/weave`, when you run it.
 
-## Daily — the center
+## Daily — by hand
 
-The daily note is normally created by Obsidian (Templater) the moment you open it: it
-renders the dates, populates `📅 Today` from the Agenda, and the `🔴` is a live Dataview
-view over today's `[plan::]` tasks. You can write the day without Claude.
+The daily note is created by Obsidian (Templater) the moment you open it: it renders the
+dates, populates `📅 Today` from the Agenda, and the `🔴` is a live Dataview view over
+today's `[plan::]` tasks. You write it by hand, without Claude, for days.
 
-`/daily` steps in for:
-- **Morning (optional):** turn yesterday evening's "Tomorrow's priorities" into
-  `[plan:: today]` on the right project; surface what's in the Agenda today.
-- **Evening close ("close the day"):** fill the closing sections from your words; append a
-  dated trace to the relevant `People/`; add a line to each touched project's `## Log`;
-  populate `## Themes` with wiki-links.
+`/daily` is only a fallback for sessions without Obsidian: it creates the note by replicating
+Templater and does a minimal augment (render the tokens, populate `📅 Today` if empty). No
+evening close: distillation is periodic, done by `/weekly` on Sunday.
 
-## Weekly Review
+## Weekly Review — chronicle + planning
 
-### When: Sunday or Monday · Duration: 20–30 minutes
+### When: Sunday · Duration: 30–40 minutes
 
-The operational plan for the coming week — work and commitments, so nothing slips.
+Two beats. **Chronicle** of the closing week: read the 7 dailies, do a light typographic pass
+on each (capitalization, typos, paragraphs — never the words), append dated traces to
+`People/`, review the project checkboxes (only `✅ YYYY-MM-DD`, no line in `## Log`), fill the
+closing sections (High/low of the week, went-well/improve/learned, People touched). Themes are
+not touched here: that's interpretive work for `/weave`. **Planning** of the opening week:
 
 1. **One thing only** — if I do nothing else this week, I do: ...
 2. **Commitments of the week** — from `Agenda.md`
@@ -49,9 +50,10 @@ The operational plan for the coming week — work and commitments, so nothing sl
 4. **The plan** — assign each chosen deliverable its day (`[plan::]`) in the project file;
    the plan itself is a Dataview view. Sum the `[est::]` into a **Budget**: demand in hours
    against usable days.
-5. **How it went** (at the end of the week)
 
-Reflection — patterns, threads, "where am I going" — lives in `/weave`, not here.
+A task left unchecked relocates by changing `[plan::]` (a decision, not a transfer).
+Reflection — what you feel, the threads, "where am I going" — lives in `/weave`, not here:
+here you record the chronicle and you plan.
 
 ## Month — intention
 

@@ -45,13 +45,20 @@ Daily Notes/YYYY-MM-DD.md       — the day
 
 The daily note is created by Obsidian (Templater, a folder template on `Daily Notes/`):
 it renders the dates; the `🔴` is a **live Dataview view** over today's `[plan::]` tasks
-in the projects. Claude isn't needed to create it — `/daily` steps in to enrich it during
-the day and for the evening close; it only creates the note itself as a fallback in
-sessions without Obsidian.
+in the projects. You write it **by hand** — Claude isn't needed. `/daily` steps in only as
+a fallback in sessions without Obsidian (it creates the note by replicating Templater). No
+evening close: distillation is periodic, not daily.
 
-The threads between days are woven by `/weave`: it re-reads the dailies and braids the
-patterns into `Themes/` and `People/`. Run it by hand, whenever you want. Reflection
-lives there, not in the Weekly Review.
+Distillation is centralized on Sunday. `/weekly` does **chronicle + planning**: it reads the
+7 dailies of the closing week, appends dated traces to `People/`, reviews the project
+checkboxes, fills the closing sections; then it plans the opening week. It records the
+observable — what you say, what you do, who you see.
+
+The threads between days are woven by `/weave`, every ~2 weeks: it re-reads the dailies (your
+words) and braids the patterns into `Themes/` and `People/`. It reads the **layer underneath**
+— what you feel, what you don't say, what you avoid — on a different register from the weekly.
+The weekly feeds the weave by acting as its map; reflection lives there, not in the Weekly
+Review.
 
 ### Projects vs ideas
 

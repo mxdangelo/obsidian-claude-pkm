@@ -60,8 +60,20 @@ In the projects this maps to `## Backlog` and the `⏳` items.*
 
 ---
 
-## How it went
-*To fill in at the end of the week*
+## 🔍 How the week went
+*Filled on Sunday by /weekly, reading the 7 dailies.*
+
+### ⬆️⬇️ High and low of the week
+**High:** 
+**Low:** 
+
+### What went well / what I'd improve / what I learned
+- Went well: 
+- Improve: 
+- Learned: 
+
+### 👥 People touched
+- 
 
 ---
 
