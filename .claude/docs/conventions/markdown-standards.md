@@ -45,8 +45,10 @@ maintain. The note type goes in the frontmatter:
 [source]       [idea]      [theme, theme/name]   [person]
 ```
 
-Themes are surfaced as wiki-links in the daily's `## Themes` section
-(`[[Themes/Some Theme]]`), not as frontmatter tags — they are the hubs of the graph view.
+Themes are surfaced as wiki-links (`[[Themes/Some Theme]]`), not as frontmatter tags — the
+`Themes/` files are the hubs of the graph view. The links and the pattern distillation are
+written by `/weave` (in the `Weave-Log` and the `Themes/` files); the daily and the weekly
+don't tag themes (that's interpretive, longitudinal work).
 
 ## Inline fields (Dataview)
 
