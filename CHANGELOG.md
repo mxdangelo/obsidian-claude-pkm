@@ -19,6 +19,8 @@ one of four types and **acts when obvious, asks when not**:
 
 The longitudinal judgment stays the user's; Claude proposes and files only the low-stakes,
 obvious cases. The `Inbox` framing is de-emphasized from URLs — free text is a first-class item.
+Free text splits further: a reflection on an offline source (a book you've read) becomes a
+`Sources/` note, while a thought of your own becomes an atomic `Ideas/` note.
 
 ### Atomic notes and books
 

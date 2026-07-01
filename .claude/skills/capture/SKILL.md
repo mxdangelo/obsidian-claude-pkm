@@ -33,9 +33,12 @@ propose); the longitudinal judgment — whether an idea is a seed or a theme —
   - Unsure between the two → ask, don't file at random.
 - **Free text** → do **not** WebFetch. Recognize it and propose the destination, then let the
   user decide:
-  - **Idea/insight** → a seed in `Ideas/`.
+  - **A reflection on something you've read/watched** (a book, a film — an offline source:
+    nothing to fetch, but worth keeping) → a `Sources/` note, with the line seeding
+    `## Takeaways`; add the title to `Media/` if missing.
+  - **A thought or seed of your own** (an insight, a distilled concept, even a longitudinal
+    one) → an atomic note in `Ideas/`, linked to the relevant theme.
   - **Commitment/deadline** → a line in `Agenda.md`, or a task in a project.
-  - Never create a `Sources/` note for it.
 - **Identical repeated URLs** → treat them once (dedup).
 
 ## Procedure
