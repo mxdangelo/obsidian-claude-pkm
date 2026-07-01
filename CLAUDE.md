@@ -17,18 +17,19 @@ the inside.
 | `Senso/` | The compass of living — `Direzione.md` (Direction), `Pratiche.md` (Practices), `Mese YYYY-MM.md` (Month), `Weekly Review YYYY-Wxx.md` |
 | `Projects/` | Projects with an active front — one `.md` file per project |
 | `Inbox/` | Front door of the knowledge side — raw, temporary capture (`inbox.md`), emptied by processing |
-| `Sources/` | Literature notes — one note per article/source worth keeping |
-| `Ideas/` | Seeds not yet activated — possibilities held in waiting |
+| `Sources/` | Literature notes — one note per source worth keeping: article **or** book |
+| `Ideas/` | Your atomic notes — one idea per note: seeds not yet activated **and** concepts distilled from sources |
 | `Themes/` | Longitudinal patterns — `Weave-Log.md` + one file per theme |
 | `People/` | Profiles of the people you interact with |
-| `Media/` | Books, films, series |
+| `Media/` | A catalog of what you consume — books, films, series (one row per title, with a rating) |
 | `Attachments/` | Attachments — PDFs, images |
 | `Templates/` | Reusable note structures |
 | `Archives/` | Completed or inactive notes |
 | `.claude/` | System internals — skills, agents, hooks |
 
 At the root, besides `Agenda.md`: `Dashboard.md` — a Dataview cockpit (agenda, active
-projects, open tasks), consulted in Obsidian, not edited via Claude.
+projects, open tasks), consulted in Obsidian, not edited via Claude — and `Useful Links.md`,
+practical bookmarks to find again when needed (useful links, not sources to distill).
 
 ## Senso (the backbone)
 
@@ -86,10 +87,15 @@ Sources/[Title].md  — literature note: a synthesis of the source + your own wo
 from your phone (a `capture-clip` script, gitignored, kept machine-local). Then `/capture`
 reads the inbox (or URLs pasted into the session): for URLs it fetches the article and
 creates a note in `Sources/`, leaving `## Takeaways` for you; plain-text lines it routes by
-hand. From there ideas graduate into `Ideas/`, patterns into `Themes/`, books into `Media/`.
+hand. From there atomic concepts graduate into `Ideas/` (one idea per note, in your words),
+patterns into `Themes/`. A book worth keeping is a source like an article: a literature note
+in `Sources/`, with `Media/` as the catalog of what you read.
 
-The line: a **source** is something you've read and want to keep; an **idea** is a seed of
-your own; a **theme** is a pattern you watch recur.
+The line: a **source** is something you've read and want to keep — article or book; an
+**idea** is an atomic note of your own, one per note — a seed not yet opened or a concept
+distilled from a source; a **theme** is a pattern you watch recur. `Media/` catalogs
+everything you consume; `Sources/` keeps only what you take something from. A `## Takeaways`
+that becomes a standalone, recurring thought graduates into `Ideas/` as an atomic note.
 
 ## Hooks (automatic, defined in `.claude/settings.json`)
 

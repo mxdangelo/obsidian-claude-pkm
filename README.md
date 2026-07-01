@@ -53,10 +53,10 @@ Knowledge side:  Inbox        →  /capture →  Sources/ → Ideas / Themes
 | `Projects/` | One flat file per project — the single source of tasks |
 | `Inbox/` | Raw capture for the knowledge side |
 | `Sources/` | Literature notes (one per article/book) |
-| `Ideas/` | Seeds not yet activated |
+| `Ideas/` | Atomic notes — seeds and concepts distilled from sources |
 | `Themes/` | Longitudinal patterns — `Weave-Log.md` + one file per theme |
 | `People/` | Profiles of people you interact with |
-| `Media/` | Books, films, series |
+| `Media/` | Catalog of what you consume — books, films, series |
 | `Templates/` | Reusable note structures |
 | `Archives/` | Completed or inactive notes |
 | `.claude/` | System internals — skills, agents, hooks, conventions |
@@ -106,7 +106,7 @@ You don't need the whole thing. For a pure journaling practice, keep the core an
   (the daily's `🔴` block just shows nothing)
 - `Themes/`, `People/` + `/weave` and `senso-tracking` — the reflective layer
 - `Inbox/`, `Sources/`, `Ideas/` + `/capture` — the knowledge side
-- `Media/`, `Archives/`, `Attachments/` — optional folders
+- `Media/`, `Archives/`, `Attachments/`, `Useful Links.md` — optional
 
 The core needs Templater (auto-created dailies); Dataview only matters once you add `Projects/`.
 Grow back into the rest when you want it — the pieces are independent.

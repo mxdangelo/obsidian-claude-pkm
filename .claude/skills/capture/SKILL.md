@@ -20,12 +20,22 @@ In priority order:
 
 If there's nothing in either, say so and stop — don't invent.
 
-**The inbox is mixed:** some lines are URLs (→ articles), others free text (an idea, a
-clipping). Sort:
-- **Line starting with `http(s)://`** → it's a source, follow the Procedure below.
-- **Free-text line** → not an article: do **not** WebFetch. Report it back to the user and
-  propose where to take it (a seed in `Ideas/`, a trace, a task), then let them decide. Don't
-  create a `Sources/` note for it.
+**The inbox is mixed.** Classify each line into one of four types, then **act if obvious, ask
+if not**. The system's rule holds: Claude does the mechanical work (fetch, synthesize,
+propose); the longitudinal judgment — whether an idea is a seed or a theme — stays the user's.
+
+- **URL** → WebFetch it (you read the page anyway), then tell *what* it is:
+  - **A source with a thesis** (article, essay, paper, whitepaper) → it's a literature note:
+    follow the Procedure below, create it in `Sources/`. Non-destructive, done without asking.
+  - **A reference page** (a tool's homepage, a dashboard, documentation — to find again when
+    needed, not to distill) → **not** a `Sources/` note: propose a line in `Useful Links.md`.
+    Don't leave a `## Takeaways` you'll never fill.
+  - Unsure between the two → ask, don't file at random.
+- **Free text** → do **not** WebFetch. Recognize it and propose the destination, then let the
+  user decide:
+  - **Idea/insight** → a seed in `Ideas/`.
+  - **Commitment/deadline** → a line in `Agenda.md`, or a task in a project.
+  - Never create a `Sources/` note for it.
 - **Identical repeated URLs** → treat them once (dedup).
 
 ## Procedure
@@ -58,6 +68,26 @@ For **each** URL:
   — so they know what to refine.
 - Do **not** log into the Dailies/Projects and do **not** promote anything to Ideas/Themes: the
   graduation is the user's decision.
+
+## Graduation (on request)
+
+A step separate from processing the inbox, and **only on the user's explicit request**
+("graduate", "take it into Ideas", pointing at a source). It never happens automatically
+during `/capture`: on a fresh inbox `## Takeaways` is empty, and the promotion is the user's
+call anyway.
+
+When a source has a `## Takeaways` already written and a concept stands on its own:
+
+1. Extract **one concept per note** into `Ideas/<Concept title>.md` — atomic, self-contained,
+   readable without the source.
+2. **The user's words.** Reuse their takeaway verbatim where you can; don't paraphrase or
+   inflate. The note is theirs, first person.
+3. Link back to the source (`[[Sources/...]]`) and look for 1–3 existing concepts/themes to
+   connect, each with its *why* line.
+4. The source stays where it is: the atomic note sits beside it, doesn't replace it.
+
+A book counts like an article: if it's worth it, it gets its own literature note in
+`Sources/`; `Media/` stays the catalog.
 
 ## Voice
 
