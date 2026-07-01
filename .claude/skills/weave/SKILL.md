@@ -10,14 +10,28 @@ user-invocable: true
 Longitudinal analysis of the patterns emerging in the daily notes. Run with `/weave` when you
 decide — read `last_weave` in the `Weave-Log` to know where to restart from.
 
+## Register — what the weave looks for
+
+Not generic "longitudinal reflection". The weekly records the observable — what you say, what you do,
+who you see, what's due. The weave reads the **layer underneath**, over time: **what you feel, what
+you don't say, what you avoid**. The tensions that don't resolve, the questions that stay open, the
+recurring affects, the threads you can't see from the inside — the one in the water doesn't see the
+water. It's the outside eye. The weekly tells you what happened; the weave tells you what moves
+beneath it.
+
 ## Steps
 
 1. Read `Themes/Weave-Log.md` — previous patterns, `last_weave`, `next_weave`.
-2. Read all the dailies in `Daily Notes/` with date > `last_weave`. If it's the first
-   activation, read the last 14 available notes.
-3. Analyze across, not chronologically — thematically. Look for: recurring themes, phrases/images
-   that return, unresolved tensions, connections between different areas (work, relationship,
-   body, study), persistent open questions.
+2. Read all the dailies in `Daily Notes/` with date > `last_weave` (if it's the first activation,
+   the last 14 available notes) — they are **your words**, the source. Read them **across**, not
+   day-by-day: the day-by-day chronicle was already done by the weekly, don't duplicate it here. The
+   period's weekly outputs (People touched, traces just appended) act as a **map** to orient among
+   the days — but the substance and the quotes come from the dailies. Themes the weekly doesn't
+   touch: recognizing and distilling them is your job.
+3. Analyze across, not chronologically — thematically. Look beneath the surface: what you feel and
+   what returns, the **unsaid** and what you avoid, the tensions you don't close, the recurring
+   affects, the connections between different areas (work, relationship, body, study), the questions
+   that stay open over time.
 4. Classify each pattern:
    - **Evolution** — it was in the log, it's transformed. Describe the movement.
    - **Interweaving** — new, but born from the combination of 2+ previous patterns. Name the parents.
@@ -57,7 +71,7 @@ one per pattern. The mirror reflects and sometimes asks; it doesn't prescribe.
    **portrait** at the top of their `People/[Name].md` file (light, anchored to the traces — no
    invented synthesis), and if a pattern emerges, update or create `## Recurring threads`.
    Recompute `relations:` and `themes:` in the frontmatter from the traces and the dailies. The
-   dated **traces** are appended by the daily, not the weave: here you only distill. Same voice
+   dated **traces** are appended by the weekly, not the weave: here you only distill. Same voice
    as the Themes notes.
 
    **Threshold:** portrait and threads only for those with enough traces to carry them — a

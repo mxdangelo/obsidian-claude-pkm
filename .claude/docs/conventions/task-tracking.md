@@ -36,11 +36,10 @@ SORT est DESC
 
 ## Relocation, not carry-forward
 
-A task left unchecked at the end of the day does **not** slide into tomorrow on its own.
-Re-placing it is a small, deliberate decision — the user's, not the system's: change its
-`[plan::]` to the chosen day, or remove it (it returns to the week's Parking lot). The one
-thing that *does* flow automatically is the previous evening's "Tomorrow's priorities": that
-was an explicit decision, and `/daily` turns it into `[plan:: today]` on the right project.
+A task left unchecked does **not** slide on its own. Re-placing it is a small, deliberate
+decision — the user's, not the system's: change its `[plan::]` to the chosen day, or remove it
+(it returns to the week's Parking lot). Relocation happens in the Sunday `/weekly`, when you
+review the project checkboxes and plan the opening week.
 
 ## Appointments and deadlines
 

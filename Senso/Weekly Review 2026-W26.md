@@ -61,8 +61,20 @@ GROUP BY plan
 
 ---
 
-## How it went
-*To fill in at the end of the week*
+## 🔍 How the week went
+*Filled on Sunday by /weekly, reading the 7 dailies.*
+
+### ⬆️⬇️ High and low of the week
+**High:** the subjunctive finally clicking — grammar turning into a way of seeing.
+**Low:** letting a call dissolve Monday's focus block, and being glad it did.
+
+### What went well / what I'd improve / what I learned
+- Went well: showed up for the study sessions even when they were hard.
+- Improve: protect the focus block — calls expand to fill whatever I give them.
+- Learned: I reach for the easier task when the real one feels heavy. The relief is the tell.
+
+### 👥 People touched
+- [[People/Alex Rivera|Alex]] — mirrored back the avoidance again ("that's the tell, isn't it").
 
 ---
 
