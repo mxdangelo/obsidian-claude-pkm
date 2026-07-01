@@ -2,6 +2,36 @@
 
 All notable changes to this system are documented here.
 
+## 4.1 — 2026-07-01 — Smarter capture, atomic notes
+
+Two refinements to the knowledge side.
+
+### Capture triage
+
+`/capture` no longer treats every URL as a literature note. It classifies each inbox line into
+one of four types and **acts when obvious, asks when not**:
+
+- a **source with a thesis** → a `Sources/` note (as before);
+- a **reference page** (a tool's homepage, a dashboard, docs) → a line in `Useful Links.md`,
+  instead of a `Sources/` note with a `## Takeaways` that never gets filled;
+- an **idea** → a seed proposed for `Ideas/`;
+- a **commitment** → a line proposed for `Agenda.md` or a project task.
+
+The longitudinal judgment stays the user's; Claude proposes and files only the low-stakes,
+obvious cases. The `Inbox` framing is de-emphasized from URLs — free text is a first-class item.
+
+### Atomic notes and books
+
+`Ideas/` now holds not just seeds but **concepts distilled from sources** — one idea per note,
+in your words. A new **Graduation** step in `/capture` extracts a standalone concept from a
+source's `## Takeaways` into its own atomic note, on request. And a **book** worth keeping is a
+source like an article: it gets a literature note in `Sources/`, while `Media/` is the catalog
+of what you read.
+
+### New
+
+- `Useful Links.md` at the root — practical bookmarks to find again, not sources to distill.
+
 ## 4.0 — 2026-07-01 — Manual daily, weekly distillation
 
 A major redesign of the life-side rhythm. The daily note no longer needs Claude: you write
